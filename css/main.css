@@ -1,4 +1,46 @@
 /* Put your code here */
 .grid {
     display: grid;
+
+    /* short hand of up code */
+    grid-template: 100px 100px 100px/ 200px auto 150px;
+    /*grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+    grid-template-areas:
+    "E E A"
+    "B C A"
+    "F D A"
+
 }
+.grid div:nth-child(1){
+    grid-area: A;
+}
+.grid div:nth-child(2){
+    grid-area: B;
+}
+.grid div:nth-child(3){
+    grid-area: C;
+}
+.grid div:nth-child(4){
+    grid-area: D;
+}
+.grid div:nth-child(5){
+    grid-area: E;
+}
+
+.grid div:nth-child(6){
+    grid-area: F;
+}
+
+/* .grid div:nth-child(2) {
+    grid-area: 2/1/4/2;
+    /*grid-row-start: row2-start;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    } */
+
+/* .grid div:nth-child(5) {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}*/
